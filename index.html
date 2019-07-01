@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>NVL-CSS-P6b</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h1>Práctica de selctores (II)</h1>
+	<p>En este ejercicio se van a aplicar reglas de parentesco a diferentes selectores.</p>
+	<p>La regla número 1(r1) determina que los p hijos directos de un div tienen que tener un borde de color fabada.</p>
+	<p>La regla número 2(r2) determina que los primeros elementos p de un div deben llevar la clase "importante".</p>
+	<p>La regla número 3(r3) determina que los elementos p que están situados al lado de los párrafos de clase "importante" tendrán el texto de color rojo.</p>
+	<hr/>
+	<h1>Aquí empieza el ejercicio</h1>
+	<div>
+		<p class="importante">Este párrafo tiene una clase "importante" y es hijo directo de un div. Cumple las reglas r1 y r2.</p>
+		<p>Este párrafo es hijo directo de un div y está al lado de un párrafo con clase "importante". Cumple las reglas r1 y r3.</p>
+		<span>
+			<h2>Este título pertenece a un elemento span.</h2>
+			<p>Este párrafo es hijo de un elemento span y nieto de un div, no cumple ninguna regla.</p>
+			<div>
+				<p class="importante">Este párrafo tiene una clase "importante" y es hijo directo de un div. Cumple las reglas r1 y r2.</p>
+				<h3>Este título está situado al lado de un párrafo de clase "importante", pero no es un párrafo, por lo que no cumple ningúna regla.</h3>
+				<p>Este párrafo es hijo directo de un div, cumple sólo la regla r1.</p>
+			</div>
+		</span>
+
+	</div>
+</body>
+</html>
